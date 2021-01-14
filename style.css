@@ -1,3 +1,20 @@
+* {
+  background-color: #28afb0;
+  font-family: "Lato", sans-serif;
+}
+section {
+  background-color: #f4d35e;
+  border-radius: 5px;
+  height: 4rem;
+  margin: 2rem;
+}
+header {
+  font-family: "Yusei Magic", sans-serif;
+  text-align: center;
+  color: #1f271b;
+  font-size: 3rem;
+}
+
 /*
 black: #1F271B
 dark blue: #19647E
