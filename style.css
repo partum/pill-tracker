@@ -1,3 +1,5 @@
+@import url(fontawesome-all.min.css);
+
 body {
   background-color: #28afb0;
   font-family: "Lato", sans-serif;
@@ -9,6 +11,7 @@ section {
   margin: 2rem;
   display: flex;
   justify-content: space-around;
+  padding-top: 1.5rem;
 }
 header {
   font-family: "Yusei Magic", sans-serif;
@@ -17,10 +20,34 @@ header {
   font-size: 3rem;
 }
 .info {
-  padding: 1.5rem;
+  padding: 0rem;
 }
-button.info {
+button {
+  height: 3rem;
+  width: 4rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#record {
   background-color: #19647e;
+  color: #f4d35e;
+}
+#record:hover {
+  border: solid#EE964B;
+}
+#delete {
+  background-color: #f4d35e;
+  color: #ee964b;
+}
+#delete:hover {
+  font-size: 1.5rem;
+}
+#add {
+  background-color: #28afb0;
+  color: #19647e;
+  font-size: 3rem;
+  margin-left: 45%;
 }
 
 /*
