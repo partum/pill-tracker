@@ -1,4 +1,4 @@
-* {
+body {
   background-color: #28afb0;
   font-family: "Lato", sans-serif;
 }
@@ -7,12 +7,20 @@ section {
   border-radius: 5px;
   height: 4rem;
   margin: 2rem;
+  display: flex;
+  justify-content: space-around;
 }
 header {
   font-family: "Yusei Magic", sans-serif;
   text-align: center;
   color: #1f271b;
   font-size: 3rem;
+}
+.info {
+  padding: 1.5rem;
+}
+button.info {
+  background-color: #19647e;
 }
 
 /*
