@@ -4,7 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-  <head>
+  <head lang="en">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Pill Tracker</title>
@@ -24,17 +24,43 @@
     />
   </head>
   <body>
-    <header>Keep Track of Your Pills</header>
-    <body>
+    <h1>Keep Track of Your Pills</h1>
+    <div id="entries">
       <section>
-        <name class="info">Name</name>
+        <p class="info">Name</p>
         <time id="start" class="info">9:00</time>
         <time id="end" class="info">9:00</time>
-        <button id="record" class="info">Record</button>
+        <button class="info text-btn">Record</button>
         <button id="delete" class="info"><i class="fas fa-trash"></i></button>
       </section>
-      <button id="add"><i class="fas fa-plus-circle"></i></button>
-    </body>
+    </div>
+    <section id="addForm">
+      <form onsubmit="addEntry();">
+        <label>Medication Name: </label>
+        <input
+          id="med-name"
+          type="text"
+          placeholder="Enter the name of your medication."
+          required
+        />
+        <label>What time did you take this medication? </label>
+        <input type="time" placeholder="Use 24hr format" required />
+        <label id="dosage-text">This dosage can be taken every </label>
+        <input
+          id="input-number"
+          type="number"
+          placeholder="Choose a number."
+          required
+          min="1"
+          max="24"
+        />
+        hours
+        <button id="submit" class="text-btn">Add</button>
+      </form>
+    </section>
+    <button id="add" onclick="inputEntry()">
+      <i class="fas fa-plus-circle"></i>
+    </button>
 
     <script src="script.js" async defer></script>
   </body>

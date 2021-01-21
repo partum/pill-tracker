@@ -13,7 +13,7 @@ section {
   justify-content: space-around;
   padding-top: 1.5rem;
 }
-header {
+h1 {
   font-family: "Yusei Magic", sans-serif;
   text-align: center;
   color: #1f271b;
@@ -29,27 +29,53 @@ button {
   border-radius: 3px;
   cursor: pointer;
 }
-#record {
+.text-btn {
   background-color: #19647e;
   color: #f4d35e;
+  margin-left: 2rem;
+  transition: 500ms;
 }
-#record:hover {
-  border: solid#EE964B;
+.text-btn:hover {
+  background-color: #28afb0;
 }
 #delete {
   background-color: #f4d35e;
-  color: #ee964b;
+  color: #19647e;
+  font-size: 1rem;
 }
 #delete:hover {
   font-size: 1.5rem;
 }
 #add {
   background-color: #28afb0;
-  color: #19647e;
+  color: #ee964b;
   font-size: 3rem;
-  margin-left: 45%;
+  position: relative;
+  left: 45vw;
+  height: 3rem;
+  width: 3rem;
+  visibility: visible;
+  transition: 200ms;
 }
-
+#add:hover {
+  font-size: 3.5rem;
+}
+#addForm {
+  background-color: #ee964b;
+}
+form > label {
+  margin-right: 0.5rem;
+  margin-left: 1rem;
+}
+#dosage-text {
+  margin-right: 0rem;
+}
+#med-name {
+  width: 15em;
+}
+#input-number {
+  width: 2em;
+}
 /*
 black: #1F271B
 dark blue: #19647E
