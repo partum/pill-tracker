@@ -35,16 +35,23 @@
       </section>
     </div>
     <section id="addForm">
-      <form onsubmit="addEntry();">
+      <form onsubmit="addEntry(); return false;">
         <label>Medication Name: </label>
         <input
           id="med-name"
           type="text"
           placeholder="Enter the name of your medication."
+          value="drug"
           required
         />
         <label>What time did you take this medication? </label>
-        <input type="time" placeholder="Use 24hr format" required />
+        <input
+          type="time"
+          id="time-taken"
+          placeholder="Use 24hr format"
+          value="05:20"
+          required
+        />
         <label id="dosage-text">This dosage can be taken every </label>
         <input
           id="input-number"
@@ -53,12 +60,13 @@
           required
           min="1"
           max="24"
+          value="7"
         />
         hours
         <button id="submit" class="text-btn">Add</button>
       </form>
     </section>
-    <button id="add" onclick="inputEntry()">
+    <button id="add" onclick="changeVisibility()">
       <i class="fas fa-plus-circle"></i>
     </button>
 
